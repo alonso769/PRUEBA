@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style_queso.css">
+</head>
+<body>
+
+    <style>
+        body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+.search-input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+.search-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f90;
+    color: #fff;
+    cursor: pointer;
+}
+.swiper-slide {
+    margin: 10px;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    text-align: center;
+    visibility: visible; /* Ensure visibility is set to visible by default */
+}
+    </style>
+   
+   <div class="search-bar">
+    <select id="searchInput" class="search-input">
+        <option value="ALL">Mostrar todo</option>
+            <option value="QUESOS HOLANDESES">QUESOS HOLANDESES</option>
+            <option value="QUESOS ITALIANOS">QUESOS ITALIANOS</option>
+            <option value="QUESOS ESPAÑOLES">QUESOS ESPAÑOLES</option>
+    </select>
+    <button onclick="searchProducts()" class="search-button">Buscar</button>
+</div>
+    <div class="butons">
+        <a href="index.html" class="btn-1">Regresar</a>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/80.00 klg</span>
+                        <h3>Queso Gouda Vonk</h3>
+                        <p>Con textura suave, cerrada, sin corteza, elástica y baja adherencia en boca.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/2.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/137.00 klg</span>
+                        <h3>Queso Cabra Rueda Vonk</h3>
+                        <p>Suavemente prensado, sin presencia de suero y bajo en grasa. Sabor: Suave y agradable. Textura: Densa.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/1.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/71.00 klg</span>
+                        <h3>Queso Maasdam Vonk</h3>
+                        <p>El queso Maasdam, dulce y afrutado, es un tipo de queso holandés elaborado en el pequeño pueblo de Maasdam, del que toma su nombre.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/3.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/12.50 UN</span>
+                        <h3>Queso Crema Eru Maasdammer X100gr</h3>
+                        <p>Este queso para untar tiene un sabor dulce con toques de nuez.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/4.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/12.50 UN</span>
+                        <h3>Queso Crema Eru Gruyere X100gr</h3>
+                        <p>Este queso de pasta color amarillo marfil se caracteriza por un sabor que puede variar de acuerdo con el tiempo que tenga.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/5.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/12.50 UN</span>
+                        <h3>Queso Crema Eru Smoked Cheese X100gr</h3>
+                        <p>Este queso para untar es todo un éxito en las mesas de desayuno y almuerzo.
+                        </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/6.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS HOLANDESES</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/270.00 Klg</span>
+                        <h3>Queso Gorgonzola Natural Giovanni Colombo</h3>
+                        <p>El queso gorgonzola está procesado íntegramente con leche de vaca y una suspensión de esporas de penicillium y hongos debidamente seleccionados.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/7.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/125.00 Klg</span>
+                        <h3>Queso Grana Padano Rueda Zanetti</h3>
+                        <p>Elaborado con leche de cruda de vaca (doble ordeña), madurado durante al menos 12 meses. De pasta cocida, prensada. Textura compacta y granulosa.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/8.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/183.00 Klg</span>
+                        <h3>Queso Fontal Colombo</h3>
+                        <p>El Fontal es un queso que presenta una pasta suave y elástica, de color amarillo pajizo. Tiene un sabor dulce, delicado y algo mantecoso y un aroma con ligeros matices de fruta.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/9.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/22.50</span>
+                        <h3>Queso Grana Padano Zanetti 150gr</h3>
+                        <p>Queso de pasta dura, elaborado con leche de vaca parcialmente descremada, con una maduración de al menos 12 meses con DOP (Denominación de Origen Protegida).</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/10.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/30.00</span>
+                        <h3>Queso Parmesano Reggiano Zanetti 150gr</h3>
+                        <p>Es un queso de leche de oveja (la palabra pecora, de la que deriva significa oveja en italiano) de aspecto duro y sabor salado. El pecorino romano se produce en Lacio hasta el año 1884 cuándo el consejo de roma prohibió la salazón del queso en las tiendas que lo comercializaban por esta razón muchos productores se trasladaron a Cardeña.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/11.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>s/33.90</span>
+                        <h3>queso duro pecorino romano zanetti cuña descripcion 200gr</h3>
+                        <p>Es de pasta prensada, con leche de oveja. Elaborado con leche de oveja, madurado durante al menos 7 meses. De pasta prensada, color blanco y textura compacta y granulosa. Se cura con aceite o con sebo durante su proceso.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/12.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/224.00 klg</span>
+                        <h3>Queso Taleggio Colombo</h3>
+                        <p>Corteza suave y algo mohosa, de pasta blanda es uniforme y compacta, más suave bajo la corteza y al final del sazonado, más desmenuzable en el centro de la forma. El color de la pasta varía de blanco a paja, con algunos agujeros muy pequeños. Textura cremosa, flexible y fundente al paladar.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/13.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ITALIANOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/190.00 klg</span>
+                        <h3>Queso Manchego 3 meses Don Lorenzo</h3>
+                        <p>Características: Coagulación enzimática, pasta firme. Maduración: Mínima 3 meses. Textura: Semidura, ligera adherencia y friabilidad, con pequeños ojos. Aroma y sabor: Intensidad media, ligeramente acido, salado suave.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/14.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ESPAÑOLES</a>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/207.00 klg</span>
+                        <h3>Queso Manchego 6 meses Don Lorenzo</h3>
+                        <p>El queso manchego con una curación de seis meses es un queso semifirme con un sabor ligeramente dulce y a nuez. Durante el proceso de curación de seis meses, el queso desarrolla una textura firme y ligeramente quebradiza, con un color amarillo mantecoso.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/15.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ESPAÑOLES</a>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/232.00 klg</span>
+                        <h3>queso manchego 12 meses Maese Miguel</h3>
+                        <p>El queso manchego con una curación de seis meses es un queso semifirme con un sabor ligeramente dulce y a nuez. Durante el proceso de curación de seis meses, el queso desarrolla una textura firme y ligeramente quebradiza, con un color amarillo mantecoso.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/16.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ESPAÑOLES</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/209.00 klg</span>
+                        <h3>Queso Manchego con Trufas La Leyenda</h3>
+                        <p>Queso de oveja con una curación de cinco meses e inyectado con trufa. Permite una progresiva combinación de sabores en boca, proporcionando una grata experiencia culinaria. El sabor y aroma de la trufa persiste durante unos minutos.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/17.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ESPAÑOLES</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/110.00 klg</span>
+                        <h3>Queso Iberico 3 leches San Antonio</h3>
+                        <p>Es un queso , suave, mantecoso, típico de las pastas prensadas no cocidas, donde se aprecian las características de las tres leches: la acidez de la leche de vaca; el aroma, el toque picante y coloración blanquecina de la leche de cabra y la mantecosidad y sabor profundo de la leche de oveja.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/18.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ESPAÑOLES</a>
+            </div>
+            
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/225.00 klg</span>
+                        <h3>Queso Cambozola Classic</h3>
+                        <p>El Queso Cambozola Clásico es un queso azul cremoso y delicioso que se elabora con leche de vaca. Es un queso de pasta blanda, con un sabor intenso y picante. El Cambozola se elabora con leche de vaca pasteurizada a la que se añaden cultivos de Penicillium roqueforti.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/19.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ALEMANES</a>
+            </div>
+
+
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/231.00 Klg</span>
+                        <h3>Queso Brie Chambrie</h3>
+                        <p>Se trata de un queso artesanal de pasta blanda hecho con leche cruda, y que tiene forma aplastada, corteza delgada y mohosa de color blanco, algo aterciopelada.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/20.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ALEMANES</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/21.50 UN</span>
+                        <h3>Queso Cambozola lata x 125gr</h3>
+                        <p>Cambozola es un queso triple crema, elaborado con leche de vaca que es una combinación del queso triple crema suavemente madurado francés y el gorgonzola italiano. </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/21.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ALEMANES</a>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/19.90 UN</span>
+                        <h3>Queso Brie Käserei Champignon Lata - 125g</h3>
+                        <p>La pasta del queso Brie es untuosa y flexible lo que facilita su consumo untado en tostadas. La corteza, que se come también y que tiene un sabor suave, con un sutil aroma a moho y champiñón fresco aunque en ocasiones se percibe un aroma frutal y a nuez.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/22.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ALEMANES</a>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/20.00 UN</span>
+                        <h3>Queso Camembert Käserei Champignon Lata - 125g</h3>
+                        <p>Tradición con un sabor espectacular, de pasta blanda con corteza blanca comestible, de aspecto blanco nieve e intenso aroma. En estado avanzado, aumenta su cremosidad dejando un leve y agradable gusto amargo en el final que realza su naturaleza.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/23.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS ALEMANES</a>
+            </div>
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/84.90 Klg</span>
+                        <h3>Queso Parmesano Uruguayo</h3>
+                        <p>Textura compacta, quebradiza y granulosa. Sin ojos, o excepcionalmente con algún ojo pequeño. Aroma característico. Sabor característico, salado, ligeramente picante.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/24.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS URUGUAYOS</a>
+            </div>
+
+
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/88.00 Klg</span>
+                        <h3>Queso Danish Blue St. Clemens</h3>
+                        <p>Este queso de tonalidades predominantemente blancas se caracteriza por su intrincada red de vetas azul verdoso, que se desarrolla durante un periodo de maduración de 8 a 12 semanas.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/25.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS DANESES</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/19.90 UN</span>
+                        <h3>Queso Brie Emborg Lata - 125 g</h3>
+                        <p>Son famosos por su textura sedosa y su sabor suave y mantecoso. Estos quesos combinan especialmente bien con vinos blancos de cuerpo medio como chradonnay y riesling, o bine, con vinos espumosos como champagne o prosecco.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/26.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS DANESES</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/188.00 Klg</span>
+                        <h3>Queso Emmental Emmi</h3>
+                        <p>Adquiere su sabor característico por la alta calidad de la leche y el uso de un proceso de producción tradicional, usando bacterias de ácido propiónico. Su corteza es lisa y el queso tiene un color marfil, con agujeros del tamaño de una cereza. El Emmentaler de Emmi es realmente una de las obras maestra de Suiza.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/27.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS SUIZOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/256.00 Klg</span>
+                        <h3>Queso Gruyere Emmi</h3>
+                        <p>El queso Emmi Gruyère, proveniente de la parte francófona de Suiza, tiene sabor ya fineza de un queso ha sido curado lentamente. Se produce desde el año 1115 en una región justo en las afueras de la pequeña ciudad de Gruyères conforme la receta original.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/28.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS SUIZOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/257.00 Klg</span>
+                        <h3>Queso Tilsiter Emmi</h3>
+                        <p>El queso Emmi Tilsiter debe su aroma picante a la experiencia internacional. Es un queso genuino de Suiza, aunque su nombre proviene de Prusia Oriental. El queso Tilsiter un queso de color amarillo, de sabor intenso, con una maduración de dos meses y de olor fuerte.</p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/29.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS SUIZOS</a>
+            </div>
+
+
+
+            <div class="swiper-slide">
+                <div class="icons">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <img src="images1/logo.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-content">
+                    <div class="product-txt">
+                        <span>S/47.00 Klg</span>
+                        <h3>Queso Paria con Orégano Laits</h3>
+                        <p>Es un queso de mediana humedad de contextura semidura no maduro con o sin adición de cultivo láctico, de sabor salado ligero a pronunciado agradable, de textura compacta con algunos ojos mecánicos. </p>
+                    </div>
+                    <div class="product-img">
+                        <img src="images1/30.png" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn-1">QUESOS NACIONALES</a>
+            </div>
+
+
+        </div>
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+       var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+                rotate: 0,
+                stretch: 0
+            },
+            loop: false, // Desactivar loop
+            initialSlide: 0 // Establecer el slide inicial, puede ser modificado según sea necesario
+        });
+
+    </script>
+
+<script src="queso.js"></script>
+</body>
+</html>

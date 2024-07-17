@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">  
+             <a href="#"><img src="imagenes/logo-1.png" class="logo-1" alt=""></a> <!-- Aquí está la corrección -->
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icon" alt="menu"/>
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#oferts">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" src="imagenes/car.svg" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="servicios" class="header-content container">
+        <div class="header-txt">
+            <span>Hola! Gracias por estar aquí</span>
+            <h1>Nuestro catálogo</h1>
+            <p>🧀🍷🍾Para quienes buscan descubrir, maridar y disfrutar lo mejor del Perú y el Mundo a la vuelta de la esquina.
+                👉Choquehuanca 235 Miraflores.</p>
+            <div class="butons">
+                <a href="#" class="btn-1">informacion</a>
+                <a href="#" class="btn-1">leer mas</a>
+                <a href="#" class="btn-1">Abarrotes</a>
+                <a href="vino.html" class="btn-1">Vinos</a>
+                <a href="queso.html" class="btn-1">Quesos</a>
+            </div>
+        </div>
+        <div class="header-img">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="imagenes/bag.png" alt="Imagen 1">
+                    <img src="imagenes/image2.png" alt="Imagen 2">
+                    <img src="imagenes/image3.png" alt="Imagen 3">
+                    <!-- Agrega más imágenes según sea necesario -->
+                </div>
+            </div>
+        </div>
+        <script>
+            let position = 0;
+            const slidesToShow = 1; // Número de imágenes a mostrar a la vez
+            const slidesToScroll = 1; // Número de imágenes a desplazar cada vez
+            const container = document.querySelector('.carousel');
+            
+            const moveToNextSlide = () => {
+                const totalSlides = container.children.length;
+                const maxPosition = -(totalSlides - slidesToShow);
+    
+                position -= slidesToScroll;
+                if (position < maxPosition) {
+                    position = 0; // Reinicia al principio
+                }
+    
+                container.style.transform = `translateX(${position * 100}%)`;
+            };
+    
+            // Desplazar automáticamente cada 3 segundos
+            setInterval(moveToNextSlide, 3000);
+        </script>
+    </div>
+
+    <section id="oferts" class="oferts container">
+        <div class="ofert-1 b1">
+            <div class="ofert-txt">
+                <h3>3 PASOS BASICOS PARA CATAR EL VINO</h3>
+                <a href="#">leer mas</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/bag.png" alt="Imagen 1">
+                        <img src="imagenes/image2.png" alt="Imagen 2">
+                        <img src="imagenes/image3.png" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ofert-1 b2">
+            <div class="ofert-txt">
+                <h3>3 PASOS BASICOS PARA CATAR EL VINO</h3>
+                <a href="#">leer mas</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/bag.png" alt="Imagen 1">
+                        <img src="imagenes/image2.png" alt="Imagen 2">
+                        <img src="imagenes/image3.png" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="ofert-1 b3">
+            <div class="ofert-txt">
+                <h3>3 PASOS BASICOS PARA CATAR EL VINO</h3>
+                <a href="#">leer mas</a>
+            </div>
+            <div class="ofert-img">
+                <div class="carousel-container-2">
+                    <div class="carousel-2">
+                        <img src="imagenes/bag.png" alt="Imagen 1">
+                        <img src="imagenes/image2.png" alt="Imagen 2">
+                        <img src="imagenes/image3.png" alt="Imagen 3">
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <!--<div class="menu-nav2">
+        <div id="pro1" class="tab active">Hamburguesas</div>
+        <div id="pro2" class="tab">Tacos</div>
+        <div id="pro3" class="tab">Desayunos</div>
+      </div>-->
+      
+      <main id="productos" class="products container">
+        <h2>Productos</h2>
+        <div class="box-container" id="lista-1">
+            <div class="box">
+                <img src="imagenes/pr1.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Crema Eru Maasdammer X100gr</h3>
+                    <p>QUESO HOLANDES</p>
+                    <p class="precio">s/12.50 UN</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr2.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Manchego 3 meses Don Lorenzo</h3>
+                    <p>QUESO ESPAÑOL</p>
+                    <p class="precio">S/190.00 klg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr3.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Crema Eru Maasdammer</h3>
+                    <p>QUESOS HOLANDESES</p>
+                    <p class="precio">S/12.50 UN</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr4.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Crema Eru Grueyere x 100gr</h3>
+                    <p>QUESOS HOLANDESES</p>
+                    <p class="precio">S/12.50 UN</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="imagenes/pr5.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Crema Eru Smoked Cheese x 100gr</h3>
+                    <p>QUESOS HOLANDESES</p>
+                    <p class="precio">S/12.50 UN</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr6.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Grana Padano Zanetti 150 gr.</h3>
+                    <p>QUESOS italianos</p>
+                    <p class="precio">S/22.50</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="imagenes/pr7.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Manchego con Trufas La Leyenda</h3>
+                    <p>QUESOS ESPAÑOLES</p>
+                    <p class="precio">S/209.00 Klg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr8.png" alt="">
+                <div class="product-txt">
+                    <h3>Queso Iberico 3 leches San Antonio</h3>
+                    <p>QUESOS ESPAÑOLES</p>
+                    <p class="precio">S/110.00 Klg</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="imagenes/pr9.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr10.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr11.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="imagenes/pr12.png" alt="">
+                <div class="product-txt">
+                    <h3>Elisium</h3>
+                    <p>Calidad premium</p>
+                    <p class="precio">$200</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="btn-2" id="load-more">Cargar más</div>
+    </main>
+
+    <section class="testimonial container">
+        <span>Testimoniales</span>
+        <h2>Que opinan nuestros clientes</h2>
+        <div class="testimonial-content">
+            <div class="testimonial-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto natus mollitia accusantium officia ducimus. Eaque possimus, sit quam rerum explicabo vitae dolorem aspernatur quisquam repudiandae provident a rem nesciunt expedita.</p>
+                <img src="imagenes/starts.png" alt="">
+                <h4>Lorem ipsum</h4>
+            </div>
+
+            <div class="testimonial-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto natus mollitia accusantium officia ducimus. Eaque possimus, sit quam rerum explicabo vitae dolorem aspernatur quisquam repudiandae provident a rem nesciunt expedita.</p>
+                <img src="imagenes/starts.png" alt="">
+                <h4>Lorem ipsum</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        
+        <div id="contacto" class="socials">
+            <a href="https://api.whatsapp.com/send?phone=5193327006&text=Hola%20quiero%20comprar%20tu%20producto">
+                <div class="social">
+                    <img src="imagenes/wsp.png" alt="WhatsApp">
+                </div>
+            </a>
+              <a href="https://api.whatsapp.com/send?phone=5193327006&text=Hola%20quiero%20comprar%20tu%20producto">
+                <div class="social">
+                    <img src="imagenes/wsp.png" alt="WhatsApp">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/donemilianobodegagourmet?igsh=MXR4eGdjbjNpOGw3NQ%3D%3D" target="_blank">
+                <div class="social">
+                    <img src="imagenes/insta.png" alt="Instagram">
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js">
+          // Redirigir a la página de carga
+          window.location.href = "index.html";
+    </script>
+</body>
+</html>
